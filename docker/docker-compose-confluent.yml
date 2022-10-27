@@ -1,76 +1,76 @@
-  ---
-  version: '3.5'
-  services:
-    zookeeper1:
-      image: lbeqiriconfluent/base-image-ubuntu:latest
-      hostname: zookeeper1
-      container_name: zookeeper1
-      privileged: true
-      ports:
-        - "2181:2181"
-        - "2888:2888"
-        - "3888:3888"
+---
+version: '3.5'
+services:
+  zookeeper1:
+    image: lbeqiriconfluent/base-image-ubuntu:latest
+    hostname: zookeeper1
+    container_name: zookeeper1
+    privileged: true
+    ports:
+      - "2181:2181"
+      - "2888:2888"
+      - "3888:3888"
 
-    broker1:
-      image: lbeqiriconfluent/base-image-ubuntu:latest
-      hostname: broker1
-      container_name: broker1
-      privileged: true
-      ports:
-        - "9092:9092"
+  broker1:
+    image: lbeqiriconfluent/base-image-ubuntu:latest
+    hostname: broker1
+    container_name: broker1
+    privileged: true
+    ports:
+      - "9092:9092"
 
-    broker2:
-      image: lbeqiriconfluent/base-image-ubuntu:latest
-      hostname: broker2
-      container_name: broker2
-      privileged: true
-      ports:
-        - "9192:9092"
+  broker2:
+    image: lbeqiriconfluent/base-image-ubuntu:latest
+    hostname: broker2
+    container_name: broker2
+    privileged: true
+    ports:
+      - "9192:9092"
 
-    broker3:
-      image: lbeqiriconfluent/base-image-ubuntu:latest
-      hostname: broker3
-      container_name: broker3
-      privileged: true
-      ports:
-        - "9292:9092"
+  broker3:
+    image: lbeqiriconfluent/base-image-ubuntu:latest
+    hostname: broker3
+    container_name: broker3
+    privileged: true
+    ports:
+      - "9292:9092"
 
-    schema-registry:
-      image: lbeqiriconfluent/base-image-ubuntu:latest
-      hostname: schema-registry
-      container_name: schema-registry
-      privileged: true
-      ports:
-        - "8081:8081"
+  schema-registry:
+    image: lbeqiriconfluent/base-image-ubuntu:latest
+    hostname: schema-registry
+    container_name: schema-registry
+    privileged: true
+    ports:
+      - "8081:8081"
 
-    connect:
-      image: lbeqiriconfluent/base-image-ubuntu:latest
-      hostname: connect
-      container_name: connect
-      privileged: true
-      ports:
-        - "8083:8083"
+  connect:
+    image: lbeqiriconfluent/base-image-ubuntu:latest
+    hostname: connect
+    container_name: connect
+    privileged: true
+    ports:
+      - "8083:8083"
 
-    rest-proxy:
-      image: lbeqiriconfluent/base-image-ubuntu:latest
-      hostname: rest-proxy
-      container_name: rest-proxy
-      privileged: true
-      ports:
-        - "8082:8082"
+  rest-proxy:
+    image: lbeqiriconfluent/base-image-ubuntu:latest
+    hostname: rest-proxy
+    container_name: rest-proxy
+    privileged: true
+    ports:
+      - "8082:8082"
 
-    ksql-server:
-      image: lbeqiriconfluent/base-image-ubuntu:latest
-      hostname: ksql-server
-      container_name: ksql-server
-      privileged: true
-      ports:
-        - "8088:8088"
+  ksql-server:
+    image: lbeqiriconfluent/base-image-ubuntu:latest
+    hostname: ksql-server
+    container_name: ksql-server
+    privileged: true
+    ports:
+      - "8088:8088"
 
-    control-center:
-      image: lbeqiriconfluent/base-image-ubuntu:latest
-      hostname: control-center
-      container_name: control-center
-      privileged: true
-      ports:
-        - "9021:9021"
+  control-center:
+    image: lbeqiriconfluent/base-image-ubuntu:latest
+    hostname: control-center
+    container_name: control-center
+    privileged: true
+    ports:
+      - "9021:9021"
