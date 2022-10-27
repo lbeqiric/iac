@@ -25,7 +25,9 @@ Build Docker Image & Push (optional)
 Edit docker-compose-confluent.yml file, provide additional config if required
 
     vi docker-compose-confluent.yml
-    ![](/docker/img.png)
+
+![Sample config](img.png)
+
 Start the containers 
 
     docker-compose -f docker-compose-confluent.yml up -d
